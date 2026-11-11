@@ -75,7 +75,7 @@ export default defineConfig({
 		improve: {
 			upstream:
 				"https://github.com/shadcn/improve/tree/cac56e1ebd3c279aa9153616cfeac7b174ab90f9/skills/improve",
-			changes: addedCodexMetadata,
+			changes: `Added disable-model-invocation so only the user can invoke the skill. ${addedCodexMetadata}`,
 		},
 		"leaving-pr-comments": {
 			harnesses: ["claude-code", "codex", "cursor"],
