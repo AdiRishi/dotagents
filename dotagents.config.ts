@@ -72,6 +72,11 @@ export default defineConfig({
 		grilling: {
 			upstream: `${mattpocock}/skills/productivity/grilling`,
 		},
+		improve: {
+			upstream:
+				"https://github.com/shadcn/improve/tree/cac56e1ebd3c279aa9153616cfeac7b174ab90f9/skills/improve",
+			changes: addedCodexMetadata,
+		},
 		"leaving-pr-comments": {
 			harnesses: ["claude-code", "codex", "cursor"],
 			upstream: `${tstack}/skills/leaving-pr-comments`,
