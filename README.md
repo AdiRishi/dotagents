@@ -31,6 +31,7 @@ Skills marked "mine" are written here. The rest are copies of other people's ski
 | [grilling](skills/grilling) | Questions me about a plan or decision until every branch is settled. | Matt Pocock |
 | [wayfinder](skills/wayfinder) | Plans work too large for one agent session as decision tickets on the issue tracker, then resolves them one at a time. | Matt Pocock |
 | [codebase-design](skills/codebase-design) | Gives a shared vocabulary for designing deep modules and deciding where seams go. | Matt Pocock |
+| [improve](skills/improve) | Audits a codebase and writes self-contained implementation plans for a cheaper agent to execute. Never edits the code itself. | shadcn, edited |
 | [engineering-principles](skills/engineering-principles) | Indexes 24 engineering principles, such as "fix root causes" and "subtract before you add", and loads each one only when it applies. | Mine, with pstack's principles |
 
 ### Build
@@ -130,6 +131,7 @@ This repository includes skills from:
 - [HugoRCD](https://github.com/HugoRCD/hr-folio)
 - [Lauren Tan](https://github.com/cursor/plugins/tree/main/pstack), through pstack
 - [Matt Pocock](https://github.com/mattpocock/skills)
+- [shadcn](https://github.com/shadcn/improve)
 - [Theo Browne](https://github.com/t3dotgg/tstack), through tstack
 - [TypeSafe AI](https://github.com/typesafe-ai/skills)
 
