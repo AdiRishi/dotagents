@@ -1,7 +1,7 @@
 import { defineConfig } from "./cli/src/config.ts";
 
 const tstack = "https://github.com/t3dotgg/tstack/tree/11e37a74d0a6868c121cd0910ab2b3bd9873b92a";
-const pstack = "https://github.com/cursor/plugins/tree/6b0300214a09fd6029cfb7077043125758cd1fd2/pstack";
+const pstack = "https://github.com/cursor/plugins/tree/bf0c7cd80abdbf7fe47b634978a7d1b4071f71a7/pstack";
 const mattpocock = "https://github.com/mattpocock/skills/tree/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d";
 const addedCodexMetadata = "Added agents/openai.yaml.";
 
