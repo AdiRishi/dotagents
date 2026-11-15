@@ -70,6 +70,9 @@ Skills marked "mine" are written here. The rest are copies of other people's ski
 | [file-pr](skills/file-pr) | Files a concise pull request. | Theo Browne, edited |
 | [pr-writing](skills/pr-writing) | Writes a PR description: a short opening, optional reviewer details, and evidence. | HugoRCD, edited |
 | [babysit-pr](skills/babysit-pr) | Watches a pull request through review and CI. | Theo Browne |
+| [sol-loop](skills/sol-loop) | Has GPT Sol review a change in rounds, three by default, and makes the smallest fix for each finding that holds up. | Theo Browne |
+| [full-send](skills/full-send) | Takes the work to a merged PR while I am away: proves the change, runs sol-loop, files the PR, babysits it, and merges once checks and reviews pass. | Theo Browne |
+| [full-stop](skills/full-stop) | Does the same work as full-send but leaves the PR open for me to merge. | Theo Browne |
 | [leaving-pr-comments](skills/leaving-pr-comments) | Sets the rules for comments on GitHub. | Theo Browne |
 
 ### Write and explain

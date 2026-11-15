@@ -66,6 +66,12 @@ export default defineConfig({
 				"https://github.com/anthropics/skills/tree/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/frontend-design",
 			changes: addedCodexMetadata,
 		},
+		"full-send": {
+			upstream: `${tstack}/skills/full-send`,
+		},
+		"full-stop": {
+			upstream: `${tstack}/skills/full-stop`,
+		},
 		"game-development": {
 			harnesses: ["codex"],
 		},
@@ -100,6 +106,10 @@ export default defineConfig({
 			upstream:
 				"https://github.com/HugoRCD/hr-folio/tree/f296fa2b7364a62b9e985f1c9d2f69be0654b857/skills/pr-writing",
 			changes: `The description lists only when to invoke the skill. The body has three sections: file-pr's simple opening and examples, optional reviewer details with good and bad examples, and the upstream evidence table. Technical explanations go in the details section. Removed the upstream AI attribution, approval requirements, ELI5, browser-tool recommendations, "Keep it honest", and the final checklist. ${addedCodexMetadata}`,
+		},
+		"sol-loop": {
+			upstream: `${tstack}/skills/sol-loop`,
+			changes: addedCodexMetadata,
 		},
 		statechart: {
 			upstream: `${pstack}/skills/statechart`,
