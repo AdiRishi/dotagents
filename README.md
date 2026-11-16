@@ -16,7 +16,7 @@ Every harness reads [`instructions/base.md`](./instructions/base.md) as its glob
 - A test protects an outcome a caller cares about and still passes after an internal refactor. No mock call counts, and no expected values computed with the implementation's own logic.
 - Comments explain only what the code cannot show, such as a hidden constraint or a workaround.
 - Anything I will read goes through [`unslop`](skills/unslop) first.
-- All browser work goes through [`agent-browser`](skills/agent-browser), whichever app runs the agent.
+- All browser work goes through [`agent-browser`](skills/agent-browser), except connecting to my running Chrome, where Claude Code and Codex use their Chrome extensions.
 - Commit at reviewable checkpoints. Pushes to an open PR can start paid reviews, so related commits go up together.
 
 Codex also gets [`instructions/codex.md`](./instructions/codex.md), which covers its sandbox.

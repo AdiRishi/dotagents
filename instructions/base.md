@@ -82,8 +82,8 @@ Push sooner when remote checks are needed to continue, a collaborator needs the 
 
 Use `agent-browser` for web automation. Load the `agent-browser` skill then run `agent-browser --help` for all commands.
 
-agent-browser replaces the browser tools that a harness or app provides, such as T3 Code's preview tools, Claude in Chrome, and the Codex Browser and Chrome plugins.
+agent-browser replaces the browser tools that a harness or app provides, such as T3 Code's preview tools and the Codex Browser plugin.
 
-When the user asks you to connect to their running browser, use `--auto-connect` or another suitable solution.
+When the user asks you to connect to their running Chrome, use Claude in Chrome in Claude Code or the Chrome plugin in Codex. Fall back to agent-browser with `--auto-connect`.
 
 You may fall back to the previously mentioned browser tools as a final fallback or if the user requests it.
