@@ -10,6 +10,16 @@ Act once the scope is clear. Suggest a bold approach when it would materially im
 
 Keep the `unslop` skill loaded. Invoke it at the start of every session and after each compaction, before you write anything Adi will read.
 
+## Browser
+
+Use `agent-browser` for every browser task, such as testing a web app, checking a UI change, filling a form, or taking a screenshot. Load the `agent-browser` skill, then run `agent-browser skills get core` before your first command.
+
+agent-browser replaces the browser tools that a harness or app provides, such as T3 Code's preview tools, Claude in Chrome, and the Codex Browser and Chrome plugins. Every agent then uses the same commands, sessions, and output, whichever app runs it. A project's own end-to-end tests still run through the project's test command.
+
+When agent-browser cannot run and `agent-browser doctor` does not fix it, report the error to Adi. Use a different browser tool only when he approves it.
+
+Ask Adi before you connect to his running Chrome with `--auto-connect`, such as to import his signed-in sessions.
+
 ## Engineering
 
 ### TypeScript
