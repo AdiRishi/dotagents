@@ -10,6 +10,7 @@ export default defineConfig({
 		"claude-code": {
 			skills: "~/.claude/skills",
 			instructions: "~/.claude/CLAUDE.md",
+			instructionsSection: "instructions/claude-code.md",
 		},
 		codex: {
 			skills: "~/.codex/skills",

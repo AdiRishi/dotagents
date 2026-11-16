@@ -78,12 +78,8 @@ Pushes to an open PR can trigger paid reviews. Keep related commits local while 
 
 Push sooner when remote checks are needed to continue, a collaborator needs the commits, or the user explicitly asks.
 
-## Browser Automation
+## Browser automation
 
-Use `agent-browser` for web automation. Load the `agent-browser` skill then run `agent-browser --help` for all commands.
+Use `agent-browser` for browser work, such as testing a web app or reading a page. Load the `agent-browser` skill, then run `agent-browser --help` for all commands. Use it in place of the browser tools a harness or app provides, such as T3 Code's preview tools, the Codex Browser plugin, and Chrome extensions. Use those tools only when agent-browser cannot do the task or the user asks for them.
 
-agent-browser replaces the browser tools that a harness or app provides, such as T3 Code's preview tools, Claude in Chrome, and the Codex Browser and Chrome plugins.
-
-When the user asks you to connect to their running browser, use `--auto-connect` or another suitable solution.
-
-You may fall back to the previously mentioned browser tools as a final fallback or if the user requests it.
+When the user asks you to control their running Chrome, use the Chrome extension named in the harness section after this one. If these instructions name no Chrome extension, or it cannot connect, run agent-browser with `--auto-connect`.
