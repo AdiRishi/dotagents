@@ -1,0 +1,3 @@
+interface:
+  display_name: "Agent Browser"
+  short_description: "Drive and test web pages with the agent-browser CLI"

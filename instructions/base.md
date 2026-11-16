@@ -77,3 +77,13 @@ Commit at meaningful, reviewable checkpoints. Keep unrelated changes separate. U
 Pushes to an open PR can trigger paid reviews. Keep related commits local while you work through the current task or set of feedback. Push them together once that work is complete. Judge that point from the conversation and push without asking for permission or waiting for hypothetical feedback.
 
 Push sooner when remote checks are needed to continue, a collaborator needs the commits, or the user explicitly asks.
+
+## Browser Automation
+
+Use `agent-browser` for web automation. Load the `agent-browser` skill then run `agent-browser --help` for all commands.
+
+agent-browser replaces the browser tools that a harness or app provides, such as T3 Code's preview tools, Claude in Chrome, and the Codex Browser and Chrome plugins.
+
+When the user asks you to connect to their running browser, use `--auto-connect` or another suitable solution.
+
+You may fall back to the previously mentioned browser tools as a final fallback or if the user requests it.

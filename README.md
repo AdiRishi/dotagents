@@ -16,9 +16,10 @@ Every harness reads [`instructions/base.md`](./instructions/base.md) as its glob
 - A test protects an outcome a caller cares about and still passes after an internal refactor. No mock call counts, and no expected values computed with the implementation's own logic.
 - Comments explain only what the code cannot show, such as a hidden constraint or a workaround.
 - Anything I will read goes through [`unslop`](skills/unslop) first.
+- All browser work goes through [`agent-browser`](skills/agent-browser), whichever app runs the agent.
 - Commit at reviewable checkpoints. Pushes to an open PR can start paid reviews, so related commits go up together.
 
-Codex also gets [`instructions/codex.md`](./instructions/codex.md), which covers its sandbox and browser tools.
+Codex also gets [`instructions/codex.md`](./instructions/codex.md), which covers its sandbox.
 
 ## Skills
 
@@ -55,6 +56,7 @@ Skills marked "mine" are written here. The rest are copies of other people's ski
 
 | Skill | What it does | From |
 | --- | --- | --- |
+| [agent-browser](skills/agent-browser) | Drives a browser from the command line to test web apps and interact with pages. Every harness uses it for browser work. | Vercel |
 | [create-verification-skill](skills/create-verification-skill) | Generates a project skill that drives the app the way a user does. | pstack, edited |
 | [maintain-verification-skill](skills/maintain-verification-skill) | Keeps that skill and its feature map accurate as the app changes. | pstack, edited |
 | [create-formal-verification-skill](skills/create-formal-verification-skill) | Generates a project skill that formally verifies the code where a bug costs the most and tests reach the least. | pstack |
@@ -137,5 +139,6 @@ This repository includes skills from:
 - [shadcn](https://github.com/shadcn/improve)
 - [Theo Browne](https://github.com/t3dotgg/tstack), through tstack
 - [TypeSafe AI](https://github.com/typesafe-ai/skills)
+- [Vercel](https://github.com/vercel-labs/agent-browser)
 
 Thank you all. My own skills and code use the [MIT license](./LICENSE).
