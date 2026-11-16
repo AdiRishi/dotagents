@@ -23,6 +23,12 @@ export default defineConfig({
 	},
 	defaultHarnesses: ["claude-code", "codex"],
 	skills: {
+		"agent-browser": {
+			harnesses: ["claude-code", "codex", "cursor"],
+			upstream:
+				"https://github.com/vercel-labs/agent-browser/tree/53384771fbafc261ba67608ac806dd5aa70b84f0/skills/agent-browser",
+			changes: addedCodexMetadata,
+		},
 		"babysit-pr": {
 			harnesses: ["claude-code", "codex", "cursor"],
 			upstream: `${tstack}/skills/babysit-pr`,
