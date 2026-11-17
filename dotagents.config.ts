@@ -34,6 +34,9 @@ export default defineConfig({
 			upstream: `${tstack}/skills/babysit-pr`,
 			changes: addedCodexMetadata,
 		},
+		"before-and-after": {
+			harnesses: ["claude-code", "codex", "cursor"],
+		},
 		"cf-cli": {
 			upstream:
 				"https://github.com/cloudflare/skills/tree/e44f580f9c4fa3bf268e284ae7706c7954ba31fd/skills/cf-cli",

@@ -1,0 +1,3 @@
+interface:
+  display_name: "Before and after"
+  short_description: "Lay out before-and-after screenshots and videos in a PR"
