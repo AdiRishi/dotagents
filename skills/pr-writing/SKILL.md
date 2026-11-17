@@ -52,3 +52,5 @@ Keep technical explanations here. The opening must remain a simple explanation o
 | AI or agent behaviour | The same set of real prompts on both sides, how answers were graded, time and cost per answer, and where the grading is unreliable. |
 | New API or feature | The code someone would write to use it. A pure addition has no "before": show it on its own. |
 | Anything else | A small table, a diagram, or an HTML page comparing both versions. |
+
+Every UI change needs the screenshots or video from the UI row. Screenshots and recordings you captured while testing any other change go in the PR as well. Use the `before-and-after` skill to capture and lay them out.

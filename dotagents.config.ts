@@ -114,7 +114,7 @@ export default defineConfig({
 			harnesses: ["claude-code", "codex", "cursor"],
 			upstream:
 				"https://github.com/HugoRCD/hr-folio/tree/f296fa2b7364a62b9e985f1c9d2f69be0654b857/skills/pr-writing",
-			changes: `The description lists only when to invoke the skill. The body has three sections: file-pr's simple opening and examples, optional reviewer details with good and bad examples, and the upstream evidence table. Technical explanations go in the details section. Removed the upstream AI attribution, approval requirements, ELI5, browser-tool recommendations, "Keep it honest", and the final checklist. ${addedCodexMetadata}`,
+			changes: `The description lists only when to invoke the skill. The body has three sections: file-pr's simple opening and examples, optional reviewer details with good and bad examples, and the upstream evidence table. Technical explanations go in the details section. Removed the upstream AI attribution, approval requirements, ELI5, and the final checklist. Replaced the browser-tool line with when a PR needs screenshots or video, pointing to the before-and-after skill, which carries the "Keep it honest" rules for media. Removed the rest of "Keep it honest". ${addedCodexMetadata}`,
 		},
 		"sol-loop": {
 			upstream: `${tstack}/skills/sol-loop`,
