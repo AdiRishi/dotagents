@@ -50,7 +50,7 @@ export default defineConfig({
 		},
 		council: {
 			upstream: `${tstack}/skills/council`,
-			changes: `Brings in two delegates by default, Claude Opus and GPT Sol, instead of three. Members the user names replace the default, in any number. ${addedCodexMetadata}`,
+			changes: `Uses Gemini 4 Neon instead of Gemini Pro as the third default model. Members the user names replace the default, regardless of count or provider. ${addedCodexMetadata}`,
 		},
 		"create-formal-verification-skill": {
 			upstream: `${pstack}/skills/create-formal-verification-skill`,

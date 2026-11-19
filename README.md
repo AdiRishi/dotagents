@@ -68,7 +68,7 @@ Skills marked "mine" are written here. The rest are copies of other people's ski
 | Skill | What it does | From |
 | --- | --- | --- |
 | [claude-code-review](skills/claude-code-review) | Runs Claude Code's review, checks each finding against the code and my intent, and fixes the findings that hold up. | Mine |
-| [council](skills/council) | Asks Claude Opus and GPT Sol, or the models I name, to review the work, scores each round, and repeats until they are satisfied. | Theo Browne, edited |
+| [council](skills/council) | Asks Claude Opus, GPT Sol, and Gemini 4 Neon, or the models I name, to review the work, scores each round, and repeats until they are satisfied. | Theo Browne, edited |
 | [file-pr](skills/file-pr) | Files a concise pull request. | Theo Browne, edited |
 | [before-and-after](skills/before-and-after) | Lays out before-and-after screenshots and videos side by side in a PR description. | Mine, with layouts from Vercel Labs |
 | [pr-writing](skills/pr-writing) | Writes a PR description: a short opening, optional reviewer details, and evidence. | HugoRCD, edited |
