@@ -1,6 +1,6 @@
 # Working in this repository
 
-This repository holds Adi's agent skills and the global instructions every harness reads. The copies under `~/.claude`, `~/.codex`, and `~/.cursor` are outputs. Change the repository, then run `node cli/src/cli.ts apply`.
+This repository holds Adi's agent skills and the global instructions every harness reads. The copies under `~/.claude`, `~/.codex`, `~/.cursor`, and `~/.gemini` are outputs. Change the repository, then run `node cli/src/cli.ts apply`.
 
 ## Check your work
 
@@ -28,7 +28,7 @@ Keep a rule in `instructions/base.md` when every harness follows it. Move it to 
 
 Every skill is one folder directly under `skills/`. A folder contains `SKILL.md` and every file the skill links to.
 
-Claude Code and Cursor read the YAML frontmatter in `SKILL.md`. Codex also reads `agents/openai.yaml`, so a skill that targets Codex needs one.
+Claude Code, Cursor, and Antigravity read the YAML frontmatter in `SKILL.md`. Codex also reads `agents/openai.yaml`, so a skill that targets Codex needs one.
 
 Skills are model-invoked by default. Make a skill user-invoked only when Adi wants it invoked by name: set `disable-model-invocation: true` in `SKILL.md` and `policy.allow_implicit_invocation: false` in `agents/openai.yaml`. When an upstream skill carries these settings and Adi wants it model-invoked, remove them and describe the edit in the skill's `changes`.
 

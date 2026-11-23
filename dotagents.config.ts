@@ -20,22 +20,26 @@ export default defineConfig({
 			skills: "~/.cursor/skills",
 			instructions: "~/.cursor/AGENTS.md",
 		},
+		antigravity: {
+			skills: "~/.gemini/config/skills",
+			instructions: "~/.gemini/AGENTS.md",
+		},
 	},
-	defaultHarnesses: ["claude-code", "codex"],
+	defaultHarnesses: ["claude-code", "codex", "antigravity"],
 	skills: {
 		"agent-browser": {
-			harnesses: ["claude-code", "codex", "cursor"],
+			harnesses: ["claude-code", "codex", "cursor", "antigravity"],
 			upstream:
 				"https://github.com/vercel-labs/agent-browser/tree/53384771fbafc261ba67608ac806dd5aa70b84f0/skills/agent-browser",
 			changes: addedCodexMetadata,
 		},
 		"babysit-pr": {
-			harnesses: ["claude-code", "codex", "cursor"],
+			harnesses: ["claude-code", "codex", "cursor", "antigravity"],
 			upstream: `${tstack}/skills/babysit-pr`,
 			changes: addedCodexMetadata,
 		},
 		"before-and-after": {
-			harnesses: ["claude-code", "codex", "cursor"],
+			harnesses: ["claude-code", "codex", "cursor", "antigravity"],
 		},
 		"cf-cli": {
 			upstream:
@@ -66,7 +70,7 @@ export default defineConfig({
 				"Combines pstack's principle-* skills and benchmark-checklist into one skill. Each references/<name>.md is a copy of pstack/skills/<name>/SKILL.md. Links to other principles point to their reference files, and mentions of pstack skills and playbooks that this repository does not have are removed. SKILL.md, the index that says when each principle applies, and agents/openai.yaml are written here.",
 		},
 		"file-pr": {
-			harnesses: ["claude-code", "codex", "cursor"],
+			harnesses: ["claude-code", "codex", "cursor", "antigravity"],
 			upstream: `${tstack}/skills/file-pr`,
 			changes: `Moved the guidance and examples for the PR description opening to pr-writing, and refers to that skill instead. ${addedCodexMetadata}`,
 		},
@@ -93,7 +97,7 @@ export default defineConfig({
 			changes: `Added disable-model-invocation so only the user can invoke the skill. ${addedCodexMetadata}`,
 		},
 		"leaving-pr-comments": {
-			harnesses: ["claude-code", "codex", "cursor"],
+			harnesses: ["claude-code", "codex", "cursor", "antigravity"],
 			upstream: `${tstack}/skills/leaving-pr-comments`,
 		},
 		"maintain-formal-verification-skill": {
@@ -111,7 +115,7 @@ export default defineConfig({
 			harnesses: ["codex"],
 		},
 		"pr-writing": {
-			harnesses: ["claude-code", "codex", "cursor"],
+			harnesses: ["claude-code", "codex", "cursor", "antigravity"],
 			upstream:
 				"https://github.com/HugoRCD/hr-folio/tree/f296fa2b7364a62b9e985f1c9d2f69be0654b857/skills/pr-writing",
 			changes: `The description lists only when to invoke the skill. The body has three sections: file-pr's simple opening and examples, optional reviewer details with good and bad examples, and the upstream evidence table. Technical explanations go in the details section. Removed the upstream AI attribution, approval requirements, ELI5, and the final checklist. Replaced the browser-tool line with when a PR needs screenshots or video, pointing to the before-and-after skill, which carries the "Keep it honest" rules for media. Removed the rest of "Keep it honest". ${addedCodexMetadata}`,
