@@ -4,7 +4,7 @@
 
 # dotagents
 
-This is how I work with coding agents. It holds the rules every agent I run follows, the skills they load, and a small TypeScript CLI that installs both on each of my machines. Claude Code, Codex, and Cursor all start from this repository.
+This is how I work with coding agents. It holds the rules every agent I run follows, the skills they load, and a small TypeScript CLI that installs both on each of my machines. Claude Code, Codex, Cursor, and Antigravity all start from this repository.
 
 ## The working agreement
 
