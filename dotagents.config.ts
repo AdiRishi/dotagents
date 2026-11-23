@@ -1,7 +1,7 @@
 import { defineConfig } from "./cli/src/config.ts";
 
 const tstack = "https://github.com/t3dotgg/tstack/tree/11e37a74d0a6868c121cd0910ab2b3bd9873b92a";
-const pstack = "https://github.com/cursor/plugins/tree/bf0c7cd80abdbf7fe47b634978a7d1b4071f71a7/pstack";
+const pstack = "https://github.com/cursor/plugins/tree/7a583913eb1b8d1a0ee76753d1a2cf072e7b54f9/pstack";
 const mattpocock = "https://github.com/mattpocock/skills/tree/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d";
 const addedCodexMetadata = "Added agents/openai.yaml.";
 
@@ -117,8 +117,8 @@ export default defineConfig({
 		"pr-writing": {
 			harnesses: ["claude-code", "codex", "cursor", "antigravity"],
 			upstream:
-				"https://github.com/HugoRCD/hr-folio/tree/f296fa2b7364a62b9e985f1c9d2f69be0654b857/skills/pr-writing",
-			changes: `The description lists only when to invoke the skill. The body has three sections: file-pr's simple opening and examples, optional reviewer details with good and bad examples, and the upstream evidence table. Technical explanations go in the details section. Removed the upstream AI attribution, approval requirements, ELI5, and the final checklist. Replaced the browser-tool line with when a PR needs screenshots or video, pointing to the before-and-after skill, which carries the "Keep it honest" rules for media. Removed the rest of "Keep it honest". ${addedCodexMetadata}`,
+				"https://github.com/HugoRCD/hr-folio/tree/6a7870e59a2b7b24d824242234a7cdc8bf64a1aa/skills/pr-writing",
+			changes: `The description lists only when to invoke the skill. The body has four sections in place of upstream's ordered list: file-pr's simple opening and examples, the upstream "Say how to try it" section, optional reviewer details with good and bad examples, and the upstream evidence table. Technical explanations and upstream's guidance on what CI doesn't show go in the details section. Removed the upstream AI attribution, approval requirements, ELI5, and the final checklist. Replaced the browser-tool line with when a PR needs screenshots or video, pointing to the before-and-after skill, which carries the "Keep it honest" rules for media. Removed the rest of "Keep it honest". ${addedCodexMetadata}`,
 		},
 		"sol-loop": {
 			upstream: `${tstack}/skills/sol-loop`,
