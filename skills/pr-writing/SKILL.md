@@ -5,7 +5,7 @@ description: Use whenever writing or updating a pull request description.
 
 # PR writing
 
-A reviewer spends most of their time picturing what the author already saw: the page they opened, the command they ran, the test that went green. Put that in the description. Prose that describes a change is a claim, not evidence.
+A reviewer should understand the change, see that it works, and be able to try it within a minute. Most of their time goes into picturing what the author already saw: the page they opened, the command they ran, the test that went green. Put that in the description. Prose that describes a change is a claim, not evidence.
 
 ## 1. Open with the problem
 
@@ -23,7 +23,18 @@ GOOD
 
 Keep the opening short and easy to read. Put technical details in the details section.
 
-## 2. Add details that help the review
+## 2. Say how to try it
+
+Right after the opening, give the fastest way to try the change, ready to copy and introduced by a plain sentence. Give the reviewer something they can paste or click, not a description of how to set things up.
+
+- **Page or UI:** the preview deployment URL of the changed page itself, not the deployment root. Take it from the deployment bot comment or the deployment status, then add the path.
+- **Package or CLI:** one command that runs the pull request build. Turn the bot's install comment (pkg.pr.new and similar) into `npx https://pkg.pr.new/<package>@<pr> <command>`; use install-then-run only when the package has no command to run.
+- **API:** a snippet someone can paste.
+- **No preview or PR build yet:** the local command, and say the link will follow.
+
+Open each link once to check it serves the change.
+
+## 3. Add details that help the review
 
 After the opening, explain what the reviewer needs to know beyond the problem and solution. Group related changes by behavior or area, not by file or commit.
 
@@ -37,11 +48,13 @@ GOOD
 
 > ✅ Existing jobs start with a pending status. Deploy the migration before the new worker. Older workers ignore the new column, so they can continue running during deployment.
 
+Say what CI doesn't show, in plain sentences: a check that failed, checks you ran yourself because the repository has no CI for them, manual checks (a real device, a real project, a browser), and what nobody verified yet. Don't restate checks CI runs and shows green, such as lint, typecheck or tests: the reviewer already sees them on the pull request.
+
 Use a short paragraph for one concern. Use bullets or subheadings when several concerns need separate explanations. Omit this section if the opening and evidence already give the reviewer enough context.
 
 Keep technical explanations here. The opening must remain a simple explanation of the problem and solution.
 
-## 3. Show it, with evidence that fits the change
+## 4. Show it, with evidence that fits the change
 
 | Change | Evidence |
 |---|---|

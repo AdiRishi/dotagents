@@ -117,8 +117,8 @@ export default defineConfig({
 		"pr-writing": {
 			harnesses: ["claude-code", "codex", "cursor", "antigravity"],
 			upstream:
-				"https://github.com/HugoRCD/hr-folio/tree/f296fa2b7364a62b9e985f1c9d2f69be0654b857/skills/pr-writing",
-			changes: `The description lists only when to invoke the skill. The body has three sections: file-pr's simple opening and examples, optional reviewer details with good and bad examples, and the upstream evidence table. Technical explanations go in the details section. Removed the upstream AI attribution, approval requirements, ELI5, and the final checklist. Replaced the browser-tool line with when a PR needs screenshots or video, pointing to the before-and-after skill, which carries the "Keep it honest" rules for media. Removed the rest of "Keep it honest". ${addedCodexMetadata}`,
+				"https://github.com/HugoRCD/hr-folio/tree/6a7870e59a2b7b24d824242234a7cdc8bf64a1aa/skills/pr-writing",
+			changes: `The description lists only when to invoke the skill. The body has four sections in place of upstream's ordered list: file-pr's simple opening and examples, the upstream "Say how to try it" section, optional reviewer details with good and bad examples, and the upstream evidence table. Technical explanations and upstream's guidance on what CI doesn't show go in the details section. Removed the upstream AI attribution, approval requirements, ELI5, and the final checklist. Replaced the browser-tool line with when a PR needs screenshots or video, pointing to the before-and-after skill, which carries the "Keep it honest" rules for media. Removed the rest of "Keep it honest". ${addedCodexMetadata}`,
 		},
 		"sol-loop": {
 			upstream: `${tstack}/skills/sol-loop`,
